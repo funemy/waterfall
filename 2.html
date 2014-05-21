@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>编辑页面</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <form role="form" method="post" enctype="multipart/form-data" action="/add">
+    	<div class="form-group">
+    		<label for="title">标题</label>
+    		<input type="text" class="form-control" id="title" name="project" placeholder="项目标题请不要重复">
+    	</div>
+    	<div class="form-group">
+    		<label for="author">作者</label>
+    		<input type="text" class="form-control" id="author" name="author" >
+        <div class="form-group">
+            <label for="teacher">指导教师</label>
+            <input type="text" class="form-control" id="teacher" name="teacher" >
+    	</div>
+        <div class="form-group">
+            <label for="date">添加时间</label>
+            <input type="text" class="form-control" id="date" name="date" placeholder="示例:2014-06-01" >
+    	<div class="form-group">
+    		<label for="grade">年级</label>
+    		<select class="form-control" name="grade">
+	            <option value="1">一年级</option>
+	            <option value="2">二年级</option>
+	            <option value="3">三年级</option>
+	            <option value="4">四年级</option>
+	            <option value="5">五年级</option>
+    		</select>
+    	</div>
+    	<div class="form-group">
+    		<label>分类</label></br>
+    		{% for a in category%}
+    		<label class="checkbox-inline">
+  				<input type="checkbox"  value="{{a[0]}}" name="category"> {{a[1]}}
+			</label>
+			{%end%}
+    	</div>
+
+    	<div class="form-group">
+    		<label for="score">分数</lable>
+    		<input type="text" class="form-control" id="score" name="score">
+    	</div>
+    	<div class="form-group">
+    		<label for="summary">简介</label>
+    		<input type="text" class="form-control" id="summary" name="summary"> 
+    	</div>
+    	<div class="form-group">
+    		<label for="upload">图片</label>
+    		<input type="file" multiple name="upload" id="upload">
+    	</div>
+    	<button type="submit" class="btn btn-default">添加</button>
+    </form>
+    </br>
+    </br>
+    <form method="post" action="/addcat">
+    	<div class="form-group">
+    		<label>新建分类</label></br>
+    		<input type="text" name="newcat"/>
+        	<button type="submit" class="btn btn-default">新建</button>
+        </div>
+    </form>
+</body>
+</html>

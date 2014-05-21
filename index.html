@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>meta-</title>
+
+  <link rel="stylesheet" href="static/css/index.css"> 
+  <link rel="stylesheet" href="static/css/module.css">
+  <link rel="stylesheet" href="static/css/showDetail.css">
+
+</head>
+<body>
+	<div id="header">
+		<div id="menuAndLogo">
+			<div id="menuButton"><img src="static/images/menuButton.png" alt="menuButton" /></div>
+			<div id="logo"><img src="static/images/logo.png" alt="logo" /></div>
+		</div>
+<!--
+		<div id="searchBar">
+			<div id="searchContent">
+					<input id="searchInfo" type="text" name="search" />
+					<input type="hidden" name="fuc" value="1" />
+					<input id="search" type="submit" value="" />
+			</div>
+		</div>
+-->
+	</div>
+	<div id="waterfallContainer">
+	</div>
+	<div id="navigation" class="popDown">
+		<div id="nav-style1" class="btn-group-vertical">
+			<a class="btn btn-default"  onclick="displayInCat('search=文化建筑&fuc=1')">文化建筑</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=商业建筑&fuc=1')">商业建筑</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=山地建筑&fuc=1')">山地建筑</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=联合设计&fuc=1')">联合设计</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=住宅设计&fuc=1')">住宅设计</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=高层设计&fuc=1')">高层设计</a>
+		</div>
+		<div id="nav-style2" class="btn-group-vertical">
+			<a class="btn btn-default"  onclick="displayInCat('search=城市设计&fuc=1')">城市设计</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=1:1构成&fuc=1')">1:1构成</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=形态构成&fuc=1')">形态构成</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=空间构成&fuc=1')">空间构成</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=光影研究&fuc=1')">光影研究</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=交通建筑设计&fuc=1')">交通建筑</a>
+		</div>
+		<div id="nav-mark" class="btn-group-vertical">
+			<a class="btn btn-default"  onclick="displayInCat('search=工作室&fuc=1')">工作室</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=艺术家沙龙&fuc=1')">艺术家沙龙</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=宿营地&fuc=1')">宿营地</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=其他&fuc=1')">老街区  </a>
+			<a class="btn btn-default"  onclick="displayInCat('search=建筑改造&fuc=1')">建筑改造</a>
+		</div>
+		<div id="nav-grade" class="btn-group-vertical">
+			<a class="btn btn-default"  onclick="displayInCat('search=1&fuc=0')">一年级</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=2&fuc=0')">二年级</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=3&fuc=0')">三年级</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=4&fuc=0')">四年级</a>
+			<a class="btn btn-default"  onclick="displayInCat('search=5&fuc=0')">五年级</a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="static/js/md5.js"></script>
+	<script type="text/javascript" src="static/js/common.js"></script>
+</body>
+</html>

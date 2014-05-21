@@ -1,0 +1,119 @@
+/*窗体CSS属性*/
+#detailWindow{
+	height: 1276px;
+	width: 900px;
+	z-index: 1001;
+	position: fixed;
+	background-color: rgba(241,241,241,1);
+	margin-left: 5%;
+
+	box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+}
+
+#statusBar{
+	height: 37px;
+	width: 100%;
+	position: relative;
+	background-color:  rgba(214,214,214,1);
+	box-shadow: inset 0 3px 5px rgba(0,0,0,0.4);
+}
+
+#closeWindow{
+	width: 36px;
+	height: 36px;
+	float: right;
+	background: no-repeat;
+	background-image: url(../images/closeWindow.png);
+	padding-right: 10px;
+}
+
+#detailInfo{
+	width: 36px;
+	height: 36px;
+	float: right;
+	background: no-repeat;
+	background-image: url(../images/DetailInfo.png);
+	padding-right: 10px;
+}
+
+#information{
+	top: 50px;
+	left: 680px;
+	position: absolute;
+	padding: 20px;
+	background-color: rgba(244,244,244,1);
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	z-index: 1001;
+	font-size: 14px;
+	width: 180px;
+	visibility: hidden;
+}
+
+#information:after{
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	border-style: solid;
+	border-width: 15px;
+	border-color: transparent transparent rgba(244,244,244,1) transparent;
+
+	position: absolute;
+	z-index: 1000;
+	top: -25px;
+	left: 60%;
+}
+
+
+#pictureBox{
+	width: 900px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#pictureBox>img{
+	position: absolute;
+	margin-left: 23.5px;
+	width: 853px;
+}
+
+#formerPage{
+	z-index: 999;
+	position: absolute;
+	top: 400px;
+	height: 200px;
+	width: 100px;
+}
+
+#nextPage{
+	z-index: 999;
+	position: absolute;
+	left: 800px;
+	top: 400px;
+	height: 200px;
+	width: 100px;
+}
+
+#formerPage:hover,
+#nextPage:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+#formerPage:active,
+#nextPage:active{
+	background-color: rgba(0,0,0,0.1);
+}
+
+/*用于图片切换的动画CSS特效*/
+.detailPage{
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+
+.detailPage:nth-child(1){
+	opacity: 1;
+	z-index: 9;
+}

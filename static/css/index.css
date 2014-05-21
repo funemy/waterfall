@@ -1,0 +1,151 @@
+body,html{
+	width: 100%;
+	margin: 0;
+	background-color: rgba(214,214,214,1);
+}
+
+#header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 65px;
+	background-color: rgba(244,244,244,1);
+	z-index: 1000;
+}
+
+#menuAndLogo{
+	position: relative;
+	left: 3.125%;
+	top: 25%;
+}
+
+#menuButton{
+	position: relative;
+	top: 2px;
+	float: left;
+}
+
+#logo{
+	float: left;
+	position: relative;
+	top: -5px;
+	left: 12px;
+}
+
+/*
+#searchBar{
+	float: right;
+	position: absolute;
+	right: 2.86%;
+	top: 30%;
+	background-image: url(../images/searchBar.png);
+	width: 184px;
+	height: 27px;
+}
+#searchContent{
+	height: 27px;
+}
+
+#searchBar input[type="text"]{
+	float: left;
+	font-size: 18px;
+	background: transparent;
+	width: 150px;
+	border: none;
+}
+
+#searchBar input[type="submit"]{
+	float: left;
+	background: transparent;
+	background-image: url(../images/searchButton.png);
+	border: none;
+	width: 25px;
+	height: 24px;
+	position: relative;
+	left: 2px;
+	top: 2px;
+}
+*/
+
+#navigation{
+	position: fixed;
+	top: 85px;
+	left: 16px;
+	width: 600px;
+	height: 265px;
+	visibility: hidden;
+
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+#navigation>div{
+	height: 100%;
+	width: 145px;
+}
+
+#navigation a{
+	display: block;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	width: 85px;
+}
+
+/*瀑布流内容样式*/
+#waterfallContainer{
+	padding-top: 65px;
+}
+
+.column{
+	position:relative;
+	float:left;
+	width: 220px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.waterBlock{
+	width: 100%;
+	background-color: rgba(231,231,231,1);
+	border-radius: 7px;
+	box-shadow: -1px 5px 5px rgba(0,0,0,0.5);
+	margin-top: 15px;
+	-webkit-transform: perspective(600px) rotateX(50deg);
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+/*作品作者与日记*/
+.authorAndDate{
+	margin-top: 36px;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid rgba(114,114,114,1);
+}
+
+/*作品名*/
+.workName{
+	float: left;
+	width: 128px;
+	height: 36px;
+}
+
+/*点赞*/
+.favor{
+	float: right;
+	width: 40px;
+	height: 36px;
+}
+
+.preview{
+	padding-top: 14px;
+	width: 220px;
+}
+
